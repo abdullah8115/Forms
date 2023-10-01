@@ -7,33 +7,43 @@
     </head>
     <body>
             
-            <forms action="#">
-                <p>
+            <form>
+                <table>
+                    <fieldset>
+                    <legend> User Info </legend>
+
+                    <p>Search:</p>
+                    <input type="search" name="search" />
+                    <input type="submit" value="Search" /> 
+
+                    <p>
                    <b> Enter Name: </b> 
-                <input type="text" name="Name" placeholder="Write Your Full Name" maxlength="26">
+                <input type="text" name="Name" placeholder="Write Your Full Name" maxlength="26" required="required" >
                 </p>
 
                 <p>
                     <b> Enter Email ID:</b>
-                    <input type="Email" name="email" placeholder="Enter Your Email" >
+                    <input type="Email" name="email" placeholder="Enter Your Email" required="required" >
                 </p>
 
                 <p>
                     <b> Enter Username </b>
-                    <input type="text" name="Username" placeholder="Create Your Username" maxlength="18">
+                    <input type="text" name="Username" placeholder="Create Your Username" maxlength="18" required="required" >
                 </p>
 
                 <p>
 
                 <b> <i> Enter Password </i> </b>
-                <input type="password" name="password" placeholder="Enter Your Password" maxlength="18">
+                <input type="password" name="password" placeholder="Enter Your Password" maxlength="18" required="required" >
 
                 </p>
 
                 <p>
                     <b> <i> Enter Confirmed Password</i></b>
-                    <input type="password" name="password" placeholder="Confirm Your Password" maxlength="18">
+                    <input type="password" name="password" placeholder="Confirm Your Password" maxlength="18" required="required" >
                 </p>
+
+                 </fieldset>
 
                       <br/>
 
@@ -72,7 +82,7 @@
 
                     <br />
 
-                    <select name="Means of Communication">
+                    <select name="Means of Communication" size="3">
 
                         <option value="Email"> Email </option>
 
@@ -83,6 +93,42 @@
                     </select>
                 </p>
 
-            </forms>
+                <p>
+                    upload your image
+                    <input type="file" name="user image" />
+                    <br />
+                    <input type="submit" value="Upload" />
+                </p>
+
+                <br />
+
+                <p>
+                    Gender:
+                    <input id="Male" type="radio" name="gender" value="M" >
+                    <label for="Male"> Male </label>
+
+                    <input id="Female" type="radio" name="gender" value="F" >
+                    <label for="Female"> Female </label>
+                </p>
+
+                <p>
+
+                    <label for="time of submission"> Time Of Submission </label>
+                    <input type="date" name="time of submission" >
+                    
+                </p>
+
+                <p> 
+                    Submit Here
+                    <input type="submit" value="login" >
+                    <button> Submit </button>
+                </p>
+
+            </form>
+
+            </body>
+            
+            <table>
     </body>
+
 </html>
